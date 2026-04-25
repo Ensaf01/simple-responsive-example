@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        .grid-layout{
+            display:grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+        }
+        .header-box{
+           background-color: rgb(143, 137, 137);
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        .mainsection{
+            display:grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 6px;
+            /* background-color: gray; */
+        }
+        .color{
+            background-color: rgb(143, 137, 137);
+            border-radius: 10px;
+        }
+        nav a{
+            display: block;
+            padding: 10px;
+            color: rgb(9, 1, 1);
+           
+        }
+        .content-section{
+            padding: 10px;
+        }
+        .sidebar-section{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            
+        }
+        .sidebar-section div{
+            background-color: rgb(143, 137, 137);
+            border-radius: 10px;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body class="grid-layout">
+    <h1>Grid layout</h1>
+    <header class="header-box">
+    <div><p>The Header</p></div>
+    </header>
+    <main class="box mainsection">
+        <section class="color nav-section">
+            <nav class="all-nav">
+                <a href="">nav1</a>
+                <a href="">nav2</a>
+                <a href="">nav3</a>
+            </nav>
+        </section>
+        <section class="color content-section">
+            <article>
+                <h2>Main Article area</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            </article>
+        </section>
+        <section class="sidebar-section">
+            
+                <div>Sidebar</div>
+                <div>Advertisement</div>
+            
+        </section>
+    </main>
+    <footer class="footer-part color">
+        <p>Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>
